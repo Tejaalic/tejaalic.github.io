@@ -1,71 +1,80 @@
-*
-body {
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
 }
-.container {
-    max-width: auto;
-    margin: 50px auto;
+html{
+    font-size: 16px;
+    margin-top: 1em;
+    font-family: sans-serif;
 }
-.tab_triger ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
+h1{
+    background-color: rgb(216, 211, 211);
+    color: rgb(52, 22, 51);
+    padding: .25rem .5rem;
+    max-width: 100%;
 }
-.tab_triger ul li label{
-    position: relative;
-    display: block;
-    padding: 8px 15px;
-    cursor: pointer;
-    min-width: auto;
-    background-color: aqua;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 8px 8px 0 0;
+h2 {
+    color: mediumpurple;
+    font-weight: bold;
+    font-style: oblique;
 }
-.tab_triger ul li:nth-child(1) label{
-    background-color: rgb(240, 230, 239);
-}
-.tab_triger ul li:nth-child(2) label{
-    background-color: rgb(224, 208, 186);
-}
-.tab_triger ul li:nth-child(3) label{
-    background-color: rgb(214, 191, 205);
-}
-.tab_triger ul li:nth-child(4) label{
-    background-color: rgb(206, 202, 205);
-}
-.tab_container_wrap input{
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin: 0;
-    z-index: -100;
-    top: -10000px;
-    display: none;
-}
-.tab_container_wrap input:checked +
-.tab_content_box{
-    background-color: rgb(240, 230, 239) ;
-    padding: 20px;
-}
-.tab_content_box:nth-of-type(1){
-    background-color: rgb(240, 230, 239);
-            display: block}
-.tab_content_box:nth-of-type(2){
-    background-color: rgb(224, 208, 186);
-}
-.tab_content_box:nth-of-type(3){
-    background-color: rgb(214, 191, 205);
-}    
-.tab_content_box:nth-of-type(3){
-        background-color: rgb(214, 191, 205);
-    }
+main, footer{
+    margin: 0 auto;
+    max-width: 1000px;
 
-.tab_content_box h2{
-    margin: 0 0 20px;
+}
+header {
+    padding: 2em 0;
+}
+header h1 {
+    position:center;
+    font-size: 3em;
+    font-style: italic;
+    font-family: cursive;
+    padding: .5em;
+    text-align: center;
+}
+header span {
+    font-size: 1.5em;
+    color: rgb(195, 195, 195);
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(192, 210, 211);
+    font-weight: bold;
+    font-variant: small-caps;
+    display: flex;
+    flex-flow: row;
+    justify-content: right;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 2em;
+}
+nav a:hover {
+    background-color: mediumpurple;
+}
+
+Section {
+    margin: 1em 0;
+    padding-top: 1em;
+}
+section ul {
+    padding-left: 1.5em;
+}
+footer {
+    margin-bottom: 1em;
+    margin-top: 2em;
+    background-color:  rgb(192, 210, 211);
+    padding: 1em;
+    text-align: center;
+    color: white;
+    max-width: 100%;
 }

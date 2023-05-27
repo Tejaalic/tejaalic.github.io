@@ -5,44 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/flexbox-style.css">
-    <title>tabs</title>
+    <link rel="stylesheet" href="./assets/background-style.css">
+    <link rel="stylesheet" href="./assets/grid-styles.css">
+    <title>portfolio-Alicia Tejada</title>
 </head>
 <body>
-    <div class="container">
-        <div class="tab_triger">
-            <ul>
-                <li><label for="tab1">Welcome</label></li>
-                <li><label for="tab2">About Me</label></li>
-                <li><label for="tab3">Gallery</label></li>
-                <li><label for="tab4">Contact Me</label></li>
-        </ul></div>
+    <header>
+        <h1>AliMar</h1>
+    </header>
+    
+    <nav class="header">
 
-    <div class="tab_container_wrap">
-            <input type="radio" checked id="tab1" name="1">
-                <div class="tab_content_box">
+            <a href="#welcome">Welcome</a></li>
+            <a href="#aboutme">About Me</a></li>
+            <a href="#gallery">Gallery</a></li>
+            <a href="#contact">Contact</a></li>
+    </ul></nav>
+
+        <main>
+            <section id="welcome">
                     <h2>Welcome</h2>
                         <p>Hello there, and Welcome!</p>
-                        <p> I'm thrilled to have you here.</p></div>
+            </section>
 
-            <input type="radio" id="tab2" name="2">
-                <div class="tab_content_box">
+            <section id="aboutme">
                     <h2>About Me</h2>
-                        <p>I'm Alicia Tejada, a passionate artist and proud mother. My journey as an artist has been an incredible adventure, filled with colors, creativity, and a deep love for self-expression. As a mother, I have also experienced the joys and challenges of nurturing and guiding little hearts.</p>
-                        <p>My artistic journey began years ago when I discovered my passion for painting. I specialize in creating stunning portraits that capture the essence and beauty of my subjects. With each stroke of the brush, I strive to convey emotions, stories, and the unique qualities that make each individual special. </p>
-                        <p>In addition to canvas paintings, I have also ventured into the world of textile art. I find immense joy in transforming fabrics into vibrant and textured masterpieces. Through my textile creations, I blend colors, patterns, and textures to create unique pieces that reflect my artistic vision.</p>
-                        <p>As a mother, I draw inspiration from the love and wonder of watching my children grow. They have taught me to see the world through fresh eyes, encouraging me to explore new techniques, experiment with different mediums, and push the boundaries of my creativity. On this website, you will find a showcase of my artwork, including my captivating portraits and intricate textile pieces.  I hope you find inspiration, joy, and a sense of connection through my artwork and resources. Feel free to reach out, connect, and explore the possibilities together.
-                        Wishing you endless inspiration and a colorful journey ahead!</p></div>
+                        <p>I'm Alicia Tejada, a passionate artist and proud mother. My journey as an artist has been an incredible adventure, filled with colors, creativity, and a deep love for self-expression. As a mother, I have also experienced the joys and challenges of nurturing and guiding little hearts.My artistic journey began years ago when I discovered my passion for painting. I specialize in creating stunning portraits that capture the essence and beauty of my subjects. With each stroke of the brush, I strive to convey emotions, stories, and the unique qualities that make each individual special. In addition to canvas paintings, I have also ventured into the world of textile art. I find immense joy in transforming fabrics into vibrant and textured masterpieces. Through my textile creations, I blend colors, patterns, and textures to create unique pieces that reflect my artistic vision. 
+                            As a mother, I draw inspiration from the love and wonder of watching my children grow. They have taught me to see the world through fresh eyes, encouraging me to explore new techniques, experiment with different mediums, and push the boundaries of my creativity. On this website, you will find a showcase of my artwork, including my captivating portraits and intricate textile pieces.  I hope you find inspiration, joy, and a sense of connection through my artwork and resources. Feel free to reach out, connect, and explore the possibilities together.
+                            Wishing you endless inspiration and a colorful journey ahead!</p>
+            </section>
 
-            <input type="radio" id="tab3" name="3">
-                <div class="tab_content_box">
+            <section id="gallery">
                     <h2>Gallery</h2>
-                        <p> Photos of my artwork.</p></div>
+                        <p> Photos of my artwork.</p>
+                    <div class="image-grid">
+                        <article>
+                            <h3>Anthony Bourdain</h3>
+                            <img src="./assets/Anthony Bourdain.jpg" alt="Painting of Anthony Bourdain">
+                        </article>
+                        <article>
+                            <h3>Kobe Bryant</h3>
+                            <img src="./assets/Kobe.jpg" alt="Painting of Kobe Bryant">
+                        </article>
+                        <article>
+                            <h3>Ruth Bader Ginsburg</h3>
+                            <img src="./assets/Captain RBG.jpeg" alt="Painting of Ruth Bader Ginsburg">
+                        </article>
+                        <article>
+                            <h3>Naruto on Jean Jacket</h3>
+                            <img src="./assets/naruto jean jacket.jpg" alt="Textile Painting of Naruto">
+                        </article>
+                        <article>
+                            <h3>Jean Jacket Collage</h3>
+                            <img src="./assets/frida Jean jacket.jpg" alt="Painting on jean jacket">
+                        </article>
+                        <article>
+                            <h3>Stevie Nicks</h3>
+                            <img src="./assets/Stevie Nicks.jpg" alt="Painting of Stevie Nicks on jean jacket.">
+                        </article>
+                    </div>
+            </section>
 
-                    <input type="radio" id="tab4" name="4">
-                    <div class="tab_content_box">
-                        <h2>Ways to Contact me</h2>
-                            <p> Email: Alimar_Art@outlook.com.</p>
-                            <p>Instagram: art.by.alimar</p></div>
-                        </div>
+            <section id="contact">
+                    <h2>Ways to Contact me</h2>
+                        <ul>
+                            <li>Email: Alimar_Art@outlook.com</li> 
+                            <li>Phone: 856 812 4296</li>
+                        </ul> 
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2023 AliMar
+        </footer>
 </body>
 </html>
